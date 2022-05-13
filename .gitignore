@@ -1,0 +1,14 @@
+scripts
+.deps
+contracts/artifacts/*
+*.sw*
+*.pyc
+*.sqlite
+*.save*
+*.orig
+*.*~
+*.log
+*.out
+*.code-workspace
+*.bck
+*.DS_Store
