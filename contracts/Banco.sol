@@ -19,15 +19,15 @@ contract Banco {
         owner = _newOwner;
     }
 
-    function getOwner() view public returns(address) {
+    function getOwner() public view returns(address) {
         return owner;
     }
 
-    function getBalance() view public returns(uint256) {
+    function getBalance() public view returns(uint256) {
         return address(this).balance;
     }
 
-    function incrementBalance(uint256 _amount) payable public {
+    function incrementBalance(uint256 _amount) public payable  {
         // Agrega saldo al contrato
         require(msg.value == _amount);
     }
